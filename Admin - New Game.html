@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	
+  </head>
+  <body style="padding-bottom: 70px">
+  	<!-- body code goes here -->
+    <div class="jumbotron">
+      <h1 class="display-4 text-center">Game Night Scoreboard</h1>
+      <p class="lead text-center">Family game night just got high-tech!</p>
+    </div>
+    <div class="container">
+		<h1>New Game</h1>
+		<form method="post" name="form1" id="new-game">
+			<div>
+				<label><b>Game:</b> </label>
+				<select>
+					<option value="Hearts">Hearts</option>
+				  	<option value="5 Crowsns">5 Crowns</option>
+				  	<option value="Oh Hell">Oh Hell</option>
+				  	<option value="Phase 10">Phase 10</option>
+				</select>
+			</div>
+			<div>
+				<label><b>Players:</b> </label>
+			  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="addPlayerModal">Add PLayer</button>
+            </div>
+			<div>
+				<ol>
+					<li>Mary</li>
+					<li>Sue</li>
+					<li>Jimmy</li>
+				</ol>
+			</div>
+	  	  <button type="button" class="btn btn-primary">Start Game</button>
+		</form>
+  	</div>
+  <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-dark">
+	  <div class="container-fluid text-center text-light">
+	  	A HobbSquad Joint - Copyright ® 2021
+	  </div>
+  </nav>
+
+	  
+<!-- Modal -->
+<div class="modal fade" id="addPlayerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>	
+	  
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
